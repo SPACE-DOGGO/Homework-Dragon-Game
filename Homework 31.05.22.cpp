@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -8,7 +8,7 @@ int main()
 	cout << "Укажите количество очков здоровья дракона: ";
 	int dragonhealth;
 	cin >> dragonhealth;
-	
+
 	cout << "Укажите количество очков атаки дракона: ";
 	int dragonattack;
 	cin >> dragonattack;
@@ -25,8 +25,6 @@ int main()
 	int battlespearhealth = spearhealth;
 
 	int battlespearattack = spearattack;
-
-	int resultbattlespearhealth = 0;
 
 	int temp = 0;
 
@@ -115,23 +113,14 @@ int main()
 			{
 				cout << "\nПобеда\n";
 				int result = (battlespearattack / 10) - num;
-				if (result == 0)
-				{
-					result = 1;
-				}
-				else if (result > 0)
-				{
-					result += num;
-				}
 				if (spear > dragonattack)
 				{
-					result++;
+					numspear = result + 1;
 				}
-				cout << "Осталось копейщиков в живых: " << result<< "\n";
+				cout << "Осталось копейщиков в живых: " << numspear << "\n";
 				break;
 			}
 			temp = 0;
 		}
 	}
 }
-
