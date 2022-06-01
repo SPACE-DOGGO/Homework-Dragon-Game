@@ -115,7 +115,7 @@ int main()
 				int result = (battlespearattack / 10) - num;
 				if (spear > dragonattack)
 				{
-					numspear = result + 1;
+					numspear = result;
 				}
 				cout << "Осталось копейщиков в живых: " << numspear << "\n";
 				break;
